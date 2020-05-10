@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --forceExit",
-    "test-show": "HEADLESS=false jest --forceExit --runInBand"
+    "test": "jest",
+    "test-show": "HEADLESS=false jest --runInBand"
   },
   "keywords": [],
   "author": "",

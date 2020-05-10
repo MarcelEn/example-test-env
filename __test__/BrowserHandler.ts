@@ -59,20 +59,13 @@ export class PageHandler {
 
 export class BrowserHandler {
     private browser: Browser;
-    private browserPromise: Promise<Browser>;
 
     public init = async () => {
-        if (!!this.browser) return;
-
-        if (!!this.browserPromise) {
-            await this.browserPromise;
-        }
-        this.browserPromise = puppeteer.launch({
+        this.browser = await puppeteer.launch({
             headless,
             slowMo: headless ? 0 : 100,
             ignoreDefaultArgs: ["--hide-scrollbars"]
         });
-        this.browser = await this.browserPromise;
     }
 
     public createPageHandler = async (data: string) => {
