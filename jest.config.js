@@ -13,55 +13,21 @@ if (fs.existsSync(dynamicPath)) {
     });
 }
 
-const componentPath = resolve("__test__", "components");
+const componentPath = ["__test__", "components"];
 
-const testSuites = {};
-
-fs.readdirSync(componentPath)
+const testSuites = fs.readdirSync(resolve(...componentPath))
     .map(describer => ({
-        describer,
-        itters: fs.readdirSync(resolve(componentPath, describer)),
+        [describer]: fs.readdirSync(resolve(...componentPath, describer)),
     }))
-    .map(({ describer, itters }) => {
-        testSuites[describer] = {};
-        itters.forEach(itter => {
-            testSuites[describer][itter] = {
-                data: fs.readFileSync(resolve(componentPath, describer, itter, "data.xml")).toString(),
-                additionalProcess: fs.existsSync(resolve(componentPath, describer, itter, "process.ts")) ?
-                    `../components/${describer}/${itter}/process`
-                    :
-                    null
-            };
-        });
-    });
+    .reduce((all = {}, current) => ({ ...all, ...current }));
 
-Object.keys(testSuites).forEach((describer) => {
+Object.entries(testSuites).forEach(([describer, itters]) => {
     const targetFile = resolve(dynamicPath, `${describer}.spec.ts`);
-    fs.writeFileSync(targetFile, `import browserHandler from "../BrowserHandler";
+    fs.writeFileSync(targetFile, `import p from "../performTest";
 
-describe("${describer}", () => {${
-        Object.keys(testSuites[describer]).map(itter => {
-            return `
-    it("${itter}", async (done) => {
-        const { data, additionalProcess } = ${JSON.stringify(testSuites[describer][itter])};
-        
-        await browserHandler.init();
-        const pageHandler = await browserHandler.createPageHandler(data);
-        try {
-            await pageHandler.matchSnapshot();
-            await pageHandler.matchImage();
-
-            if (!!additionalProcess) {
-                await (await import(additionalProcess)).default(pageHandler);
-            }
-        } finally {
-            await pageHandler.close();
-            done();
-        }
-    });`
-        })
-            .join("\n")
-        }
+describe("${describer}", () => {
+    ${
+        itters.map(itter => `it("${itter}", p("${describer}","${itter}"));`).join("\n    ")}
 });`);
 });
 
