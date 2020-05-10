@@ -1,12 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`kickass-stage renders-correctly 1`] = `
-"
-            <h1>Kickass Stage</h1>
-
-        "
-`;
-
 exports[`triple-stage renders-correctly 1`] = `
 "
             <h1>Triple Stage</h1>

@@ -1,4 +1,8 @@
 import puppeteer, { Browser, Page } from "puppeteer";
+import { toMatchImageSnapshot } from "jest-image-snapshot";
+
+expect.extend({ toMatchImageSnapshot });
+jest.setTimeout(60000);
 
 const target = "http://localhost:3000";
 
@@ -36,9 +40,7 @@ export class PageHandler {
                 .toMatchImageSnapshot({
                     failureThreshold: headless ? 0 : 0.007,
                     failureThresholdType: 'percent',
-                    customSnapshotIdentifier: ({ defaultIdentifier }) => {
-                        return `${defaultIdentifier.slice(13, defaultIdentifier.length)}-${device}`
-                    }
+                    customSnapshotIdentifier: ({ defaultIdentifier }) => `${defaultIdentifier}-${device}`
                 });
         }
     }
@@ -55,16 +57,22 @@ export class PageHandler {
     }
 }
 
-export default class BrowserHandler {
+export class BrowserHandler {
     private browser: Browser;
+    private browserPromise: Promise<Browser>;
 
     public init = async () => {
         if (!!this.browser) return;
-        this.browser = await puppeteer.launch({
+
+        if (!!this.browserPromise) {
+            await this.browserPromise;
+        }
+        this.browserPromise = puppeteer.launch({
             headless,
             slowMo: headless ? 0 : 100,
             ignoreDefaultArgs: ["--hide-scrollbars"]
         });
+        this.browser = await this.browserPromise;
     }
 
     public createPageHandler = async (data: string) => {
@@ -90,3 +98,5 @@ export default class BrowserHandler {
         await this.browser.close();
     }
 }
+
+export default new BrowserHandler();

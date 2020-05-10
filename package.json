@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --forceExit --detectOpenHandles",
-    "test-show": "HEADLESS=false jest --forceExit --detectOpenHandles"
+    "test": "jest --forceExit",
+    "test-show": "HEADLESS=false jest --forceExit --runInBand"
   },
   "keywords": [],
   "author": "",
