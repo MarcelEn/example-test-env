@@ -38,7 +38,7 @@ export class PageHandler {
 
             (expect(await this.page.screenshot()) as any)
                 .toMatchImageSnapshot({
-                    failureThreshold: headless ? 0 : 0.007,
+                    failureThreshold: headless ? 0 : 1,
                     failureThresholdType: 'percent',
                     customSnapshotIdentifier: ({ defaultIdentifier }) => `${defaultIdentifier}-${device}`
                 });
@@ -87,7 +87,6 @@ export class BrowserHandler {
     };
 
     public close = async () => {
-        await Promise.all((await this.browser.pages()).map(page => page.close()));
         await this.browser.close();
     }
 }
