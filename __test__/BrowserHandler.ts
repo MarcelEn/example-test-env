@@ -2,6 +2,8 @@ import puppeteer, { Browser, Page } from "puppeteer";
 
 const target = "http://localhost:3000";
 
+const headless = process.env.HEADLESS !== "false";
+
 export class PageHandler {
     constructor(public page: Page) { }
 
@@ -32,6 +34,8 @@ export class PageHandler {
 
             (expect(await this.page.screenshot()) as any)
                 .toMatchImageSnapshot({
+                    failureThreshold: headless ? 0 : 0.007,
+                    failureThresholdType: 'percent',
                     customSnapshotIdentifier: ({ defaultIdentifier }) => {
                         return `${defaultIdentifier.slice(13, defaultIdentifier.length)}-${device}`
                     }
@@ -57,8 +61,9 @@ export default class BrowserHandler {
     public init = async () => {
         if (!!this.browser) return;
         this.browser = await puppeteer.launch({
-            // headless: false,
-            // slowMo: 100,
+            headless,
+            slowMo: headless ? 0 : 100,
+            ignoreDefaultArgs: ["--hide-scrollbars"]
         });
     }
 
@@ -72,6 +77,10 @@ export default class BrowserHandler {
         }, data);
 
         await page.waitForNavigation({ waitUntil: 'networkidle0' });
+
+        await page.evaluate(() => {
+            document.querySelector("html").setAttribute("style", "overflow: hidden");
+        });
 
         return new PageHandler(page);
     };

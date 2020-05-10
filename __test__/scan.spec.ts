@@ -40,33 +40,23 @@ jest.setTimeout(30000);
 
 let browserHandler: BrowserHandler = new BrowserHandler();
 
-const testSuiteCount = Object.entries(testSuite).map(([_, entry]) => entry).map(obj => Object.keys(obj)).reduce((p = [], c) => [...p, ...c]).length;
-let testSuitesDone = 0;
-
-const checkBrowserClose = async () => {
-    if (testSuitesDone >= testSuiteCount) {
-        await browserHandler.close();
-    }
-}
-
 Object.keys(testSuite).forEach(describer => {
     describe(describer, () => {
         Object.keys(testSuite[describer]).forEach(itter => {
             const { data, additionalProcess } = testSuite[describer][itter];
             it(itter, async (done) => {
-                try {
-                    await browserHandler.init();
-                    const pageHandler = await browserHandler.createPageHandler(data);
+                await browserHandler.init();
+                const pageHandler = await browserHandler.createPageHandler(data);
+                try{
                     await pageHandler.matchSnapshot();
                     await pageHandler.matchImage();
-
+    
                     if (!!additionalProcess) {
                         await (await import(additionalProcess)).default(pageHandler);
                     }
-                    done();
                 } finally {
-                    testSuitesDone++;
-                    await checkBrowserClose();
+                    await pageHandler.close();
+                    done();
                 }
             });
         });
