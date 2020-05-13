@@ -11,7 +11,7 @@ const headless = process.env.HEADLESS !== "false";
 export class PageHandler {
     constructor(public page: Page) { }
 
-    public matchImage = async () => {
+    public async matchImage() {
         for (const [device, width] of Object.entries({
             mobile: 580,
             tablet: 1050,
@@ -45,14 +45,14 @@ export class PageHandler {
         }
     }
 
-    public matchSnapshot = async () => {
+    public async matchSnapshot() {
         let snapshot = await this.page.$eval(".content", ({ innerHTML }) => innerHTML)
             .catch(e => "");
 
         expect(snapshot).toMatchSnapshot();
     }
 
-    public close = async () => {
+    public async close() {
         await this.page.close();
     }
 }
@@ -60,7 +60,7 @@ export class PageHandler {
 export class BrowserHandler {
     private browser: Browser;
 
-    public init = async () => {
+    public async init() {
         this.browser = await puppeteer.launch({
             headless,
             slowMo: headless ? 0 : 100,
@@ -68,7 +68,7 @@ export class BrowserHandler {
         });
     }
 
-    public createPageHandler = async (data: string) => {
+    public async createPageHandler(data: string) {
         const page = await this.browser.newPage();
 
         await page.goto(target);
@@ -86,7 +86,7 @@ export class BrowserHandler {
         return new PageHandler(page);
     };
 
-    public close = async () => {
+    public async close() {
         await this.browser.close();
     }
 }
