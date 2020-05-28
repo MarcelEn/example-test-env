@@ -23,7 +23,7 @@ export class PageHandler {
                     width,
                 }
             );
-            const height = await this.page.$eval(".content", (e) => (e as any).offsetHeight);
+            const height = await this.page.$eval("#content", (e) => (e as any).offsetHeight);
 
             await this.page.setViewport(
                 {
@@ -33,7 +33,7 @@ export class PageHandler {
             );
 
             await this.page.evaluate(() => {
-                document.querySelector(".content").scrollIntoView();
+                document.querySelector("#content").scrollIntoView();
             });
 
             (expect(await this.page.screenshot()) as any)
@@ -46,7 +46,7 @@ export class PageHandler {
     }
 
     public async matchSnapshot() {
-        let snapshot = await this.page.$eval(".content", ({ innerHTML }) => innerHTML)
+        let snapshot = await this.page.$eval("#content", ({ innerHTML }) => innerHTML)
             .catch(e => "");
 
         expect(snapshot).toMatchSnapshot();
@@ -80,6 +80,12 @@ export class BrowserHandler {
         await page.waitForNavigation({ waitUntil: 'networkidle0' });
 
         await page.evaluate(() => {
+            var consentConfirm = document.getElementById("selectAll");
+            if (!!consentConfirm) consentConfirm.click();
+
+            var stageassistent = document.getElementById("stageassistent");
+            if (!!stageassistent) stageassistent.remove();
+
             document.querySelector("html").setAttribute("style", "overflow: hidden");
         });
 
