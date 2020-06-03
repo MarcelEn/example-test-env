@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test-show": "HEADLESS=false jest --runInBand"
+    "test": "start-test mockserver 3000 jest",
+    "test-show": "start-test mockserver 3000 HEADLESS=false jest --runInBand",
+    "mockserver": "node dist/devServer.js",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/server.js",
+    "start-dev": "nodemon -w dist dist/devServer.js"
   },
   "keywords": [],
   "author": "",
@@ -13,12 +18,19 @@
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.9.6",
     "@babel/preset-typescript": "^7.9.0",
+    "@types/express": "^4.17.6",
     "@types/jest": "^25.2.1",
+    "@types/node": "^14.0.9",
     "@types/puppeteer": "^2.0.1",
     "babel-plugin-transform-dynamic-import": "^2.1.0",
+    "nodemon": "^2.0.4",
+    "start-server-and-test": "^1.11.0",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
     "jest": "^26.0.1",
     "jest-image-snapshot": "^3.1.0",
-    "puppeteer": "^3.0.4",
-    "typescript": "^3.8.3"
+    "puppeteer": "^3.0.4"
   }
 }

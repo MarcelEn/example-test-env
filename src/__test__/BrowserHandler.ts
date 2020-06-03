@@ -4,9 +4,7 @@ import { toMatchImageSnapshot } from "jest-image-snapshot";
 expect.extend({ toMatchImageSnapshot });
 jest.setTimeout(60000);
 
-const target = "http://localhost:3000";
-
-const headless = process.env.HEADLESS !== "false";
+const headless = false//process.env.HEADLESS !== "false";
 
 export class PageHandler {
     constructor(public page: Page) { }
@@ -71,7 +69,7 @@ export class BrowserHandler {
     public async createPageHandler(data: string) {
         const page = await this.browser.newPage();
 
-        await page.goto(target);
+        await page.goto("http://localhost:3000/form.html");
         await page.evaluate((innerHTML) => {
             document.querySelector("textarea").innerHTML = innerHTML;
             document.querySelector("form").submit();

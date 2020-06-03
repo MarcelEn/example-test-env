@@ -13,7 +13,7 @@ afterAll(async (done) => {
 });
 
 export default (describer: string, itter: string) => async (done: () => void) => {
-    const data = readFileSync(resolve("__test__", "components", describer, itter, "data.xml")).toString()
+    const data = readFileSync(resolve("src", "__test__", "components", describer, itter, "data.xml")).toString()
     const pageHandler = await browserHandler.createPageHandler(data);
 
     try {

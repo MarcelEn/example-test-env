@@ -1,3 +1,4 @@
 /node_modules
-/__test__/dynamic/__image_snapshots__/__diff_output__
-/__test__/dynamic/*.ts
+/src/__test__/dynamic/__image_snapshots__/__diff_output__
+/src/__test__/dynamic/*.ts
+/dist

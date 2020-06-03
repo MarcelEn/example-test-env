@@ -1,7 +1,7 @@
 const { resolve } = require("path");
 const fs = require("fs");
 
-const dynamicPath = resolve("__test__", "dynamic");
+const dynamicPath = resolve("src", "__test__", "dynamic");
 
 if (fs.existsSync(dynamicPath)) {
     fs.readdirSync(dynamicPath, {
@@ -13,7 +13,7 @@ if (fs.existsSync(dynamicPath)) {
     });
 }
 
-const componentPath = ["__test__", "components"];
+const componentPath = ["src", "__test__", "components"];
 
 const testSuites = fs.readdirSync(resolve(...componentPath))
     .map(describer => ({
