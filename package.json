@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "start-test mockserver 3000 jest",
-    "test-show": "start-test mockserver 3000 HEADLESS=false jest --runInBand",
+    "test": "start-test mockserver 3000 test:test-normal",
+    "test:test-normal": "jest",
+    "test:update": "start-test mockserver 3000 test:test-update",
+    "test:test-update": "jest -u",
+    "test:show": "start-test mockserver 3000 HEADLESS=false jest --runInBand",
     "mockserver": "node dist/devServer.js",
     "build": "tsc",
     "dev": "tsc --watch",

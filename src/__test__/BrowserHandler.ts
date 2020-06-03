@@ -4,7 +4,7 @@ import { toMatchImageSnapshot } from "jest-image-snapshot";
 expect.extend({ toMatchImageSnapshot });
 jest.setTimeout(60000);
 
-const headless = false//process.env.HEADLESS !== "false";
+const headless = process.env.HEADLESS !== "false";
 
 export class PageHandler {
     constructor(public page: Page) { }
