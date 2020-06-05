@@ -2,6 +2,6 @@ import { PageHandler } from "../../../BrowserHandler";
 
 export default async (pageHandler: PageHandler) => {
     await pageHandler.page.evaluate(() => {
-        document.querySelectorAll("[data-form-element = 'form-label']").forEach(e => e.remove());
+        document.querySelectorAll("[data-form-element = 'form-label']").forEach(e => e.setAttribute("style", "display: none;"));
     })
 }

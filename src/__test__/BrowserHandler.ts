@@ -1,5 +1,6 @@
 import puppeteer, { Browser, Page } from "puppeteer";
 import { toMatchImageSnapshot } from "jest-image-snapshot";
+import { xml2js, js2xml } from "xml-js";
 
 expect.extend({ toMatchImageSnapshot });
 jest.setTimeout(60000);
@@ -11,9 +12,10 @@ export class PageHandler {
 
     public async matchImage() {
         for (const [device, width] of Object.entries({
-            mobile: 580,
-            tablet: 1050,
-            desktop: 1920,
+            sm: 580,
+            md: 1025,
+            lg: 1200,
+            full: 1920,
         })) {
             await this.page.setViewport(
                 {
@@ -44,10 +46,10 @@ export class PageHandler {
     }
 
     public async matchSnapshot() {
-        let snapshot = await this.page.$eval("#content", ({ innerHTML }) => innerHTML)
+        let snapshot = await this.page.$eval("#content", (e) => new XMLSerializer().serializeToString(e))
             .catch(e => "");
 
-        expect(snapshot).toMatchSnapshot();
+        expect(js2xml(xml2js(`<root>${snapshot}</root>`), { spaces: 2 })).toMatchSnapshot();
     }
 
     public async close() {

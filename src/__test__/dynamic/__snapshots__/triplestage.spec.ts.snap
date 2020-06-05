@@ -1,8 +1,156 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`triplestage renders-correctly 1`] = `
-"<div class=\\"ov-hidden triplestage-container triplestage-special-container\\" data-component-element=\\"triplestage\\"><div class=\\"bg-b23 pt-60 pb-24 py-md-60 py-lg-60 p-relative triplestage-main-container\\"><div class=\\"container p-relative pb-lg-60\\"><div class=\\"row\\"><div class=\\"col-12 col-lg-9 pl-lg-80\\"><h1 class=\\"heading-2 heading-md-2 heading-lg-2 fc-w1 d-block mb-md-4 mb-lg-4 heading\\">IONOS is #hereforyou</h1><div class=\\"text-1 fc-w1 d-block mb-16 mb-md-20 mb-lg-20\\">Get your business or project online fast with special offers and individual support.</div><div class=\\"row mt-40 align-items-center\\"><div class=\\"col-12 col-md-auto col-lg-auto\\"></div></div><div class=\\"pb-lg-40\\"><div class=\\"mxw-lg-9\\"><div data-responsible=\\"frontend\\" class=\\"stage-checker\\"><div send-to-page=\\"domaincheck\\" send-to-pageflow=\\"Order\\" data-form-element=\\"form-container\\" class=\\"form-container d-block\\"><form method=\\"post\\" action=\\"/domaincheck\\" data-form-element=\\"form\\" class=\\"d-block\\"><div data-form-element=\\"form-row\\" class=\\"form-row form-row-following row gapless p-0\\"><div data-form-element=\\"form-group\\" class=\\"form-group clearfix form-group-following col d-flex align-items-stretch\\"><div class=\\"form-field form-field-text form-label-following form-field-invert form-field-icon d-block\\"><input type=\\"text\\" size=\\"40\\" maxlength=\\"200\\" tabindex=\\"2\\" autocorrect=\\"off\\" spellcheck=\\"false\\" wrapper-class=\\"d-block\\" name=\\"multicheck.Domain\\" class=\\"form-input form-input-text\\" value=\\"\\" data-form-element=\\"form-element\\" id=\\"d11e93|d2\\"><img alt=\\"\\" class=\\"form-field-image\\" data-svg-embed=\\"true\\" data-lavender-original=\\"null\\" src=\\"/modules/frontend-applications-common/img/templates/assets/checker/ic-world.svg\\"><noscript><img src=\\"/modules/frontend-applications-common/img/templates/assets/checker/ic-world.svg\\" alt=\\"\\" class=\\"form-field-image\\" data-svg-embed=\\"true\\"></noscript></div></div><div data-form-element=\\"form-group\\" class=\\"form-group clearfix form-group-preceding col-auto d-flex align-items-stretch\\"><button type=\\"submit\\" class=\\"btn btn-fill btn-action btn-alternative\\" name=\\"__SBMT:d181e114d2:\\" value=\\"\\" data-form-element=\\"form-submit\\">
+"<root>
+  <div xmlns=\\"http://www.w3.org/1999/xhtml\\" id=\\"content\\" class=\\"clearfix\\">
+    <div class=\\"ov-hidden triplestage-container triplestage-special-container\\" data-component-element=\\"triplestage\\">
+      <div class=\\"bg-b23 pt-60 pb-24 py-md-60 py-lg-60 p-relative triplestage-main-container\\">
+        <div class=\\"container p-relative pb-lg-60\\">
+          <div class=\\"row\\">
+            <div class=\\"col-12 col-lg-9 pl-lg-80\\">
+              <h1 class=\\"heading-2 heading-md-2 heading-lg-2 fc-w1 d-block mb-md-4 mb-lg-4 heading\\">IONOS is #hereforyou</h1>
+              <div class=\\"text-1 fc-w1 d-block mb-16 mb-md-20 mb-lg-20\\">Get your business or project online fast with special offers and individual support.</div>
+              <div class=\\"row mt-40 align-items-center\\">
+                <div class=\\"col-12 col-md-auto col-lg-auto\\"/>
+              </div>
+              <div class=\\"pb-lg-40\\">
+                <div class=\\"mxw-lg-9\\">
+                  <div data-responsible=\\"frontend\\" class=\\"stage-checker\\">
+                    <div send-to-page=\\"domaincheck\\" send-to-pageflow=\\"Order\\" data-form-element=\\"form-container\\" class=\\"form-container d-block\\">
+                      <form method=\\"post\\" action=\\"/domaincheck\\" data-form-element=\\"form\\" class=\\"d-block\\">
+                        <div data-form-element=\\"form-row\\" class=\\"form-row form-row-following row gapless p-0\\">
+                          <div data-form-element=\\"form-group\\" class=\\"form-group clearfix form-group-following col d-flex align-items-stretch\\">
+                            <div class=\\"form-field form-field-text form-label-following form-field-invert form-field-icon d-block\\">
+                              <input type=\\"text\\" size=\\"40\\" maxlength=\\"200\\" tabindex=\\"2\\" autocorrect=\\"off\\" spellcheck=\\"false\\" wrapper-class=\\"d-block\\" name=\\"multicheck.Domain\\" class=\\"form-input form-input-text\\" value=\\"\\" data-form-element=\\"form-element\\" id=\\"d11e93|d2\\"/>
+                              <img alt=\\"\\" class=\\"form-field-image\\" data-svg-embed=\\"true\\" data-lavender-original=\\"null\\" src=\\"/modules/frontend-applications-common/img/templates/assets/checker/ic-world.svg\\"/>
+                              <noscript>&lt;img src=\\"/modules/frontend-applications-common/img/templates/assets/checker/ic-world.svg\\" alt=\\"\\" class=\\"form-field-image\\" data-svg-embed=\\"true\\"&gt;</noscript>
+                            </div>
+                            <label data-form-element=\\"form-label\\" class=\\"form-label form-element-preceding\\" data-animate=\\"true\\" data-cursor=\\"true\\" for=\\"d11e93|d2\\" style=\\"display: none;\\">Find your domain now</label>
+                          </div>
+                          <div data-form-element=\\"form-group\\" class=\\"form-group clearfix form-group-preceding col-auto d-flex align-items-stretch\\">
+                            <button type=\\"submit\\" class=\\"btn btn-fill btn-action btn-alternative\\" name=\\"__SBMT:d181e114d2:\\" value=\\"\\" data-form-element=\\"form-submit\\">
                 
                 Check
-              </button><input type=\\"hidden\\" name=\\"__SYNT:d181e114d2:__CMD(domaincheck):SELWRP\\" value=\\"multicheck\\"></div></div><div class=\\"form-hidden\\"><input type=\\"hidden\\" name=\\"__sendingdata\\" value=\\"1\\"><input type=\\"hidden\\" name=\\"__pageflow\\" value=\\"Order\\"><div class=\\"form-field form-field-hidden form-field-invert form-field-value\\"><input type=\\"hidden\\" tabindex=\\"1\\" autocorrect=\\"off\\" spellcheck=\\"false\\" name=\\"linkId\\" value=\\"ct.btn.check.bigdomaincheck\\" data-form-element=\\"form-element\\" class=\\"form-input form-input-hidden form-field-value\\" id=\\"d11e86|d2\\"></div></div></form></div></div></div></div></div></div></div></div><div class=\\"bg-b22 bg-lg-none pt-24 pb-24 p-relative zi-1\\"><div class=\\"container\\"><div class=\\"row mnt-lg-80\\"><div class=\\"col-12 col-md-12 col-lg-4 p-relative d-flex flex-column align-self-stretch\\"><div class=\\"card d-flex flex-column flex-grow align-self-stretch triplestage-sub-container bg-b20 bg-lg-none\\"><div class=\\"card-body p-20 px-lg-32 pt-lg-48 pb-lg-0 d-lg-flex flex-lg-column p-relative\\"><div class=\\"bg-b20 d-none d-lg-block triplestage-background triplestage-sub-background zi-0\\" style=\\"background-image: url('http://localhost:3000/api/assets/triplestage/renders-correctly/1.jpg')\\"></div><div class=\\"p-lg-relative zi-1 mnb-lg-20 d-lg-flex flex-lg-column triplestage-pre-body\\"><h4 class=\\"heading-3 mb-4 fc-w1\\">Website builder + Free .com and email</h4><span class=\\"d-block fc-w1\\">Quick. Simple. Yours.</span><div class=\\"flex-grow\\"><div class=\\"text-1 ff-opb fc-w1 mt-24 mb-lg-24\\"><span data-element=\\"price\\" data-responsible=\\"frontend\\" class=\\"webfont-price-container variant-static fc-w1 webfont-price-text price-dot-separated\\" data-price-article=\\"\\" data-price-variant=\\"static\\" data-price-type=\\"Gross\\"><span xmlns:domaininformationprovider=\\"java:com.oneandone.sales.domains.DomainInformationProvider\\" calculategross=\\"false\\" class=\\"price-container price-type-offer-price\\"><span class=\\"price-text-above-inline\\">From </span><span class=\\"price-currency-before\\">$</span><span class=\\"price-before-separator\\">5</span><span class=\\"price-text-behind-inline \\"> /month</span></span></span></div></div><a class=\\"d-block btn-lg btn-lg-fill btn-lg-alternative triplestage-link\\" href=\\"/websites/website-builder\\" data-linkid=\\"ct.btn.triplestage.stages.stage.see-offer\\" id=\\"button-ct-btn-triplestage-stages-stage-see-offer\\">See offer</a></div></div><div class=\\"card-body d-none d-lg-flex flex-lg-column flex-lg-grow pt-52\\"></div></div></div><div class=\\"col-12 col-md-12 col-lg-4 p-relative d-flex flex-column align-self-stretch mt-36 mt-lg-0\\"><div class=\\"card d-flex flex-column flex-grow align-self-stretch triplestage-sub-container bg-b20 bg-lg-none\\"><div class=\\"card-body p-20 px-lg-32 pt-lg-48 pb-lg-0 d-lg-flex flex-lg-column p-relative\\"><div class=\\"bg-b20 d-none d-lg-block triplestage-background triplestage-sub-background zi-0\\" style=\\"background-image: url('http://localhost:3000/api/assets/triplestage/renders-correctly/2.jpg')\\"></div><div class=\\"p-lg-relative zi-1 mnb-lg-20 d-lg-flex flex-lg-column triplestage-pre-body\\"><h4 class=\\"heading-3 mb-4 fc-w1\\">VPS hosting + VMware virtualization</h4><span class=\\"d-block fc-w1\\">Performance upgrade 2019</span><div class=\\"flex-grow\\"><div class=\\"text-1 ff-opb fc-w1 mt-24 mb-lg-24\\"><span data-element=\\"price\\" data-responsible=\\"frontend\\" class=\\"webfont-price-container variant-static fc-w1 webfont-price-text price-dot-separated\\" data-price-article=\\"\\" data-price-variant=\\"static\\" data-price-type=\\"Gross\\"><span xmlns:domaininformationprovider=\\"java:com.oneandone.sales.domains.DomainInformationProvider\\" calculategross=\\"false\\" class=\\"price-container price-type-offer-price\\"><span class=\\"price-text-above-inline\\">6 months from </span><span class=\\"price-currency-before\\">$</span><span class=\\"price-before-separator\\">1</span><span class=\\"price-text-behind-inline \\"> /month</span><span class=\\"price-text-below-inline\\"><span value=\\"30\\" calculategross=\\"false\\" class=\\"price-container-inline price-type-regular-price\\"><span class=\\"price-text-before-inline\\">then </span><span class=\\"price-text-inline\\"><span class=\\"price-text\\">$30</span></span><span class=\\"price-text-behind-inline\\">/month</span></span></span></span></span></div></div><a class=\\"d-block btn-lg btn-lg-fill btn-lg-alternative triplestage-link\\" href=\\"/servers/vps\\" data-linkid=\\"ct.btn.triplestage.stages.stage1.see-offer\\" id=\\"button-ct-btn-triplestage-stages-stage1-see-offer\\">See offer</a></div></div><div class=\\"card-body d-none d-lg-flex flex-lg-column flex-lg-grow pt-52\\"></div></div></div><div class=\\"col-12 col-md-12 col-lg-4 p-relative d-flex flex-column align-self-stretch mt-36 mt-lg-0\\"><div class=\\"card d-flex flex-column flex-grow align-self-stretch triplestage-sub-container bg-b20 bg-lg-none\\"><div class=\\"card-body p-20 px-lg-32 pt-lg-48 pb-lg-0 d-lg-flex flex-lg-column p-relative\\"><div class=\\"bg-b20 d-none d-lg-block triplestage-background triplestage-sub-background zi-0\\"></div><div class=\\"p-lg-relative zi-1 mnb-lg-20 d-lg-flex flex-lg-column triplestage-pre-body\\"><h4 class=\\"heading-3 mb-4 fc-w1\\">VPS hosting + VMware virtualization</h4><span class=\\"d-block fc-w1\\">Performance upgrade 2019</span><div class=\\"flex-grow\\"><div class=\\"text-1 ff-opb fc-w1 mt-24 mb-lg-24\\"><span data-element=\\"price\\" data-responsible=\\"frontend\\" class=\\"webfont-price-container variant-static fc-w1 webfont-price-text price-dot-separated\\" data-price-article=\\"\\" data-price-variant=\\"static\\" data-price-type=\\"Gross\\"><span xmlns:domaininformationprovider=\\"java:com.oneandone.sales.domains.DomainInformationProvider\\" calculategross=\\"false\\" class=\\"price-container price-type-offer-price\\"><span class=\\"price-text-above-inline\\">6 months from </span><span class=\\"price-currency-before\\">$</span><span class=\\"price-before-separator\\">1</span><span class=\\"price-text-behind-inline \\"> /month</span><span class=\\"price-text-below-inline\\"><span value=\\"30\\" calculategross=\\"false\\" class=\\"price-container-inline price-type-regular-price\\"><span class=\\"price-text-before-inline\\">then </span><span class=\\"price-text-inline\\"><span class=\\"price-text\\">$30</span></span><span class=\\"price-text-behind-inline\\">/month</span></span></span></span></span></div></div><a class=\\"d-block btn-lg btn-lg-fill btn-lg-alternative triplestage-link\\" href=\\"/servers/vps\\" data-linkid=\\"ct.btn.triplestage.stages.stage2.see-offer\\" id=\\"button-ct-btn-triplestage-stages-stage2-see-offer\\">See offer</a></div></div><div class=\\"card-body d-none d-lg-flex flex-lg-column flex-lg-grow pt-52\\"></div></div></div></div></div></div></div>"
+              </button>
+                            <input type=\\"hidden\\" name=\\"__SYNT:d181e114d2:__CMD(domaincheck):SELWRP\\" value=\\"multicheck\\"/>
+                          </div>
+                        </div>
+                        <div class=\\"form-hidden\\">
+                          <input type=\\"hidden\\" name=\\"__sendingdata\\" value=\\"1\\"/>
+                          <input type=\\"hidden\\" name=\\"__pageflow\\" value=\\"Order\\"/>
+                          <div class=\\"form-field form-field-hidden form-field-invert form-field-value\\">
+                            <input type=\\"hidden\\" tabindex=\\"1\\" autocorrect=\\"off\\" spellcheck=\\"false\\" name=\\"linkId\\" value=\\"ct.btn.check.bigdomaincheck\\" data-form-element=\\"form-element\\" class=\\"form-input form-input-hidden form-field-value\\" id=\\"d11e86|d2\\"/>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=\\"bg-b22 bg-lg-none pt-24 pb-24 p-relative zi-1\\">
+        <div class=\\"container\\">
+          <div class=\\"row mnt-lg-80\\">
+            <div class=\\"col-12 col-md-12 col-lg-4 p-relative d-flex flex-column align-self-stretch\\">
+              <div class=\\"card d-flex flex-column flex-grow align-self-stretch triplestage-sub-container bg-b20 bg-lg-none\\">
+                <div class=\\"card-body p-20 px-lg-32 pt-lg-48 pb-lg-0 d-lg-flex flex-lg-column p-relative\\">
+                  <div class=\\"bg-b20 d-none d-lg-block triplestage-background triplestage-sub-background zi-0\\" style=\\"background-image: url('http://localhost:3000/api/assets/triplestage/renders-correctly/1.jpg')\\"/>
+                  <div class=\\"p-lg-relative zi-1 mnb-lg-20 d-lg-flex flex-lg-column triplestage-pre-body\\">
+                    <h4 class=\\"heading-3 mb-4 fc-w1\\">Website builder + Free .com and email</h4>
+                    <span class=\\"d-block fc-w1\\">Quick. Simple. Yours.</span>
+                    <div class=\\"flex-grow\\">
+                      <div class=\\"text-1 ff-opb fc-w1 mt-24 mb-lg-24\\">
+                        <span data-element=\\"price\\" data-responsible=\\"frontend\\" class=\\"webfont-price-container variant-static fc-w1 webfont-price-text price-dot-separated\\" data-price-article=\\"\\" data-price-variant=\\"static\\" data-price-type=\\"Gross\\">
+                          <span xmlns:domaininformationprovider=\\"java:com.oneandone.sales.domains.DomainInformationProvider\\" calculategross=\\"false\\" class=\\"price-container price-type-offer-price\\">
+                            <span class=\\"price-text-above-inline\\">From </span>
+                            <span class=\\"price-currency-before\\">$</span>
+                            <span class=\\"price-before-separator\\">5</span>
+                            <span class=\\"price-text-behind-inline \\"> /month</span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                    <a class=\\"d-block btn-lg btn-lg-fill btn-lg-alternative triplestage-link\\" href=\\"/websites/website-builder\\" data-linkid=\\"ct.btn.triplestage.stages.stage.see-offer\\" id=\\"button-ct-btn-triplestage-stages-stage-see-offer\\">See offer</a>
+                  </div>
+                </div>
+                <div class=\\"card-body d-none d-lg-flex flex-lg-column flex-lg-grow pt-52\\"/>
+              </div>
+            </div>
+            <div class=\\"col-12 col-md-12 col-lg-4 p-relative d-flex flex-column align-self-stretch mt-36 mt-lg-0\\">
+              <div class=\\"card d-flex flex-column flex-grow align-self-stretch triplestage-sub-container bg-b20 bg-lg-none\\">
+                <div class=\\"card-body p-20 px-lg-32 pt-lg-48 pb-lg-0 d-lg-flex flex-lg-column p-relative\\">
+                  <div class=\\"bg-b20 d-none d-lg-block triplestage-background triplestage-sub-background zi-0\\" style=\\"background-image: url('http://localhost:3000/api/assets/triplestage/renders-correctly/2.jpg')\\"/>
+                  <div class=\\"p-lg-relative zi-1 mnb-lg-20 d-lg-flex flex-lg-column triplestage-pre-body\\">
+                    <h4 class=\\"heading-3 mb-4 fc-w1\\">VPS hosting + VMware virtualization</h4>
+                    <span class=\\"d-block fc-w1\\">Performance upgrade 2019</span>
+                    <div class=\\"flex-grow\\">
+                      <div class=\\"text-1 ff-opb fc-w1 mt-24 mb-lg-24\\">
+                        <span data-element=\\"price\\" data-responsible=\\"frontend\\" class=\\"webfont-price-container variant-static fc-w1 webfont-price-text price-dot-separated\\" data-price-article=\\"\\" data-price-variant=\\"static\\" data-price-type=\\"Gross\\">
+                          <span xmlns:domaininformationprovider=\\"java:com.oneandone.sales.domains.DomainInformationProvider\\" calculategross=\\"false\\" class=\\"price-container price-type-offer-price\\">
+                            <span class=\\"price-text-above-inline\\">6 months from </span>
+                            <span class=\\"price-currency-before\\">$</span>
+                            <span class=\\"price-before-separator\\">1</span>
+                            <span class=\\"price-text-behind-inline \\"> /month</span>
+                            <span class=\\"price-text-below-inline\\">
+                              <span value=\\"30\\" calculategross=\\"false\\" class=\\"price-container-inline price-type-regular-price\\">
+                                <span class=\\"price-text-before-inline\\">then </span>
+                                <span class=\\"price-text-inline\\">
+                                  <span class=\\"price-text\\">$30</span>
+                                </span>
+                                <span class=\\"price-text-behind-inline\\">/month</span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                    <a class=\\"d-block btn-lg btn-lg-fill btn-lg-alternative triplestage-link\\" href=\\"/servers/vps\\" data-linkid=\\"ct.btn.triplestage.stages.stage1.see-offer\\" id=\\"button-ct-btn-triplestage-stages-stage1-see-offer\\">See offer</a>
+                  </div>
+                </div>
+                <div class=\\"card-body d-none d-lg-flex flex-lg-column flex-lg-grow pt-52\\"/>
+              </div>
+            </div>
+            <div class=\\"col-12 col-md-12 col-lg-4 p-relative d-flex flex-column align-self-stretch mt-36 mt-lg-0\\">
+              <div class=\\"card d-flex flex-column flex-grow align-self-stretch triplestage-sub-container bg-b20 bg-lg-none\\">
+                <div class=\\"card-body p-20 px-lg-32 pt-lg-48 pb-lg-0 d-lg-flex flex-lg-column p-relative\\">
+                  <div class=\\"bg-b20 d-none d-lg-block triplestage-background triplestage-sub-background zi-0\\"/>
+                  <div class=\\"p-lg-relative zi-1 mnb-lg-20 d-lg-flex flex-lg-column triplestage-pre-body\\">
+                    <h4 class=\\"heading-3 mb-4 fc-w1\\">VPS hosting + VMware virtualization</h4>
+                    <span class=\\"d-block fc-w1\\">Performance upgrade 2019</span>
+                    <div class=\\"flex-grow\\">
+                      <div class=\\"text-1 ff-opb fc-w1 mt-24 mb-lg-24\\">
+                        <span data-element=\\"price\\" data-responsible=\\"frontend\\" class=\\"webfont-price-container variant-static fc-w1 webfont-price-text price-dot-separated\\" data-price-article=\\"\\" data-price-variant=\\"static\\" data-price-type=\\"Gross\\">
+                          <span xmlns:domaininformationprovider=\\"java:com.oneandone.sales.domains.DomainInformationProvider\\" calculategross=\\"false\\" class=\\"price-container price-type-offer-price\\">
+                            <span class=\\"price-text-above-inline\\">6 months from </span>
+                            <span class=\\"price-currency-before\\">$</span>
+                            <span class=\\"price-before-separator\\">1</span>
+                            <span class=\\"price-text-behind-inline \\"> /month</span>
+                            <span class=\\"price-text-below-inline\\">
+                              <span value=\\"30\\" calculategross=\\"false\\" class=\\"price-container-inline price-type-regular-price\\">
+                                <span class=\\"price-text-before-inline\\">then </span>
+                                <span class=\\"price-text-inline\\">
+                                  <span class=\\"price-text\\">$30</span>
+                                </span>
+                                <span class=\\"price-text-behind-inline\\">/month</span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                    <a class=\\"d-block btn-lg btn-lg-fill btn-lg-alternative triplestage-link\\" href=\\"/servers/vps\\" data-linkid=\\"ct.btn.triplestage.stages.stage2.see-offer\\" id=\\"button-ct-btn-triplestage-stages-stage2-see-offer\\">See offer</a>
+                  </div>
+                </div>
+                <div class=\\"card-body d-none d-lg-flex flex-lg-column flex-lg-grow pt-52\\"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</root>"
 `;
