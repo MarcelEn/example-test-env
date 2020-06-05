@@ -13,7 +13,7 @@ afterAll(async (done) => {
 });
 
 const resolveAssets = (data: string, describer: string, itter: string) => {
-    return data.replace(new RegExp(/\[\[asset:.*\]\]/gm), (hit) => {
+    return data.replace(new RegExp(/\[\[asset:.+?(?=\]\])\]\]/gm), (hit) => {
         const asset = hit.slice(8, hit.length - 2);
         return `http://localhost:3000/api/assets/${describer}/${itter}/${asset}`;
     })

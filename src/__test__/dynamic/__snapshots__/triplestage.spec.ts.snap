@@ -5,6 +5,7 @@ exports[`triplestage renders-correctly 1`] = `
   <div xmlns=\\"http://www.w3.org/1999/xhtml\\" id=\\"content\\" class=\\"clearfix\\">
     <div class=\\"ov-hidden triplestage-container triplestage-special-container\\" data-component-element=\\"triplestage\\">
       <div class=\\"bg-b23 pt-60 pb-24 py-md-60 py-lg-60 p-relative triplestage-main-container\\">
+        <div class=\\"p-absolute triplestage-background triplestage-main-background\\" style=\\"background-image: url('http://localhost:3000/api/assets/triplestage/renders-correctly/4.jpg')\\"/>
         <div class=\\"container p-relative pb-lg-60\\">
           <div class=\\"row\\">
             <div class=\\"col-12 col-lg-9 pl-lg-80\\">
@@ -21,11 +22,11 @@ exports[`triplestage renders-correctly 1`] = `
                         <div data-form-element=\\"form-row\\" class=\\"form-row form-row-following row gapless p-0\\">
                           <div data-form-element=\\"form-group\\" class=\\"form-group clearfix form-group-following col d-flex align-items-stretch\\">
                             <div class=\\"form-field form-field-text form-label-following form-field-invert form-field-icon d-block\\">
-                              <input type=\\"text\\" size=\\"40\\" maxlength=\\"200\\" tabindex=\\"2\\" autocorrect=\\"off\\" spellcheck=\\"false\\" wrapper-class=\\"d-block\\" name=\\"multicheck.Domain\\" class=\\"form-input form-input-text\\" value=\\"\\" data-form-element=\\"form-element\\" id=\\"d11e93|d2\\"/>
+                              <input type=\\"text\\" size=\\"40\\" maxlength=\\"200\\" tabindex=\\"2\\" autocorrect=\\"off\\" spellcheck=\\"false\\" wrapper-class=\\"d-block\\" name=\\"multicheck.Domain\\" class=\\"form-input form-input-text\\" value=\\"\\" data-form-element=\\"form-element\\" id=\\"d11e96|d2\\"/>
                               <img alt=\\"\\" class=\\"form-field-image\\" data-svg-embed=\\"true\\" data-lavender-original=\\"null\\" src=\\"/modules/frontend-applications-common/img/templates/assets/checker/ic-world.svg\\"/>
                               <noscript>&lt;img src=\\"/modules/frontend-applications-common/img/templates/assets/checker/ic-world.svg\\" alt=\\"\\" class=\\"form-field-image\\" data-svg-embed=\\"true\\"&gt;</noscript>
                             </div>
-                            <label data-form-element=\\"form-label\\" class=\\"form-label form-element-preceding\\" data-animate=\\"true\\" data-cursor=\\"true\\" for=\\"d11e93|d2\\" style=\\"display: none;\\">Find your domain now</label>
+                            <label data-form-element=\\"form-label\\" class=\\"form-label form-element-preceding\\" data-animate=\\"true\\" data-cursor=\\"true\\" for=\\"d11e96|d2\\" style=\\"display: none;\\">Find your domain now</label>
                           </div>
                           <div data-form-element=\\"form-group\\" class=\\"form-group clearfix form-group-preceding col-auto d-flex align-items-stretch\\">
                             <button type=\\"submit\\" class=\\"btn btn-fill btn-action btn-alternative\\" name=\\"__SBMT:d181e114d2:\\" value=\\"\\" data-form-element=\\"form-submit\\">
@@ -39,7 +40,7 @@ exports[`triplestage renders-correctly 1`] = `
                           <input type=\\"hidden\\" name=\\"__sendingdata\\" value=\\"1\\"/>
                           <input type=\\"hidden\\" name=\\"__pageflow\\" value=\\"Order\\"/>
                           <div class=\\"form-field form-field-hidden form-field-invert form-field-value\\">
-                            <input type=\\"hidden\\" tabindex=\\"1\\" autocorrect=\\"off\\" spellcheck=\\"false\\" name=\\"linkId\\" value=\\"ct.btn.check.bigdomaincheck\\" data-form-element=\\"form-element\\" class=\\"form-input form-input-hidden form-field-value\\" id=\\"d11e86|d2\\"/>
+                            <input type=\\"hidden\\" tabindex=\\"1\\" autocorrect=\\"off\\" spellcheck=\\"false\\" name=\\"linkId\\" value=\\"ct.btn.check.bigdomaincheck\\" data-form-element=\\"form-element\\" class=\\"form-input form-input-hidden form-field-value\\" id=\\"d11e89|d2\\"/>
                           </div>
                         </div>
                       </form>
@@ -116,7 +117,7 @@ exports[`triplestage renders-correctly 1`] = `
             <div class=\\"col-12 col-md-12 col-lg-4 p-relative d-flex flex-column align-self-stretch mt-36 mt-lg-0\\">
               <div class=\\"card d-flex flex-column flex-grow align-self-stretch triplestage-sub-container bg-b20 bg-lg-none\\">
                 <div class=\\"card-body p-20 px-lg-32 pt-lg-48 pb-lg-0 d-lg-flex flex-lg-column p-relative\\">
-                  <div class=\\"bg-b20 d-none d-lg-block triplestage-background triplestage-sub-background zi-0\\"/>
+                  <div class=\\"bg-b20 d-none d-lg-block triplestage-background triplestage-sub-background zi-0\\" style=\\"background-image: url('http://localhost:3000/api/assets/triplestage/renders-correctly/3.jpeg')\\"/>
                   <div class=\\"p-lg-relative zi-1 mnb-lg-20 d-lg-flex flex-lg-column triplestage-pre-body\\">
                     <h4 class=\\"heading-3 mb-4 fc-w1\\">VPS hosting + VMware virtualization</h4>
                     <span class=\\"d-block fc-w1\\">Performance upgrade 2019</span>

@@ -23,8 +23,10 @@
                 <subline>Performance upgrade 2019</subline>
                 <text>[[price-static:1|offer|6 months from | /month|[[price-static:30|regular||/month||then ]]|]]</text>
                 <link target="vps" text="See offer" title="See offer" type="button" />
+                <background>[[asset:3.jpeg]]</background>
             </stage>
         </stages>
+        <background extension="jpg" src="[[asset:4.jpg]]">[[asset:4.jpg]]</background>
         <link text="See our #hereforyou support" title="See our #hereforyou support" type="cta" />
     </component>
 </components>
