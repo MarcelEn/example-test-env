@@ -1,8 +1,8 @@
 import { Router } from "express";
-import handleSubmitRouter from "./handleSubmit/handleSubmitRouter";
+import assetsRouter from "./assets/assetsRouter";
 
 const router = Router();
 
-router.use("/handleSubmit", handleSubmitRouter);
+router.use("/assets", assetsRouter);
 
 export default router;

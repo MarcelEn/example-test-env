@@ -9,12 +9,14 @@
                 <subline>Quick. Simple. Yours.</subline>
                 <text>[[price-static:5|offer|From | /month||]]</text>
                 <link target="website-builder" text="See offer" title="See offer" type="button" />
+                <background>[[asset:1.jpg]]</background>
             </stage>
             <stage>
                 <headline>VPS hosting + VMware virtualization</headline>
                 <subline>Performance upgrade 2019</subline>
                 <text>[[price-static:1|offer|6 months from | /month|[[price-static:30|regular||/month||then ]]|]]</text>
                 <link target="vps" text="See offer" title="See offer" type="button" />
+                <background>[[asset:2.jpg]]</background>
             </stage>
             <stage>
                 <headline>VPS hosting + VMware virtualization</headline>

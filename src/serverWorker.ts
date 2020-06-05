@@ -10,7 +10,9 @@ export default () => {
 
     app.use("/api", apiRouter);
 
-    app.use("/", (_req, res) => res.sendStatus(200));
+    app.get("/", (_req, res) => res.sendStatus(200));
+
+    app.use((_req, res) => res.sendStatus(404));
 
     app.listen(PORT, () => {
         console.log(`listening on ${PORT}`);
